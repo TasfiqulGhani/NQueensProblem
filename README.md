@@ -3,13 +3,29 @@ NQueensProblem using backtracking .Here it is N*N board for N queens .User will 
 
 
 ##How It Works.
-
-+attackChecking(int i,int j) 
- Here I am checking wheather this queen which means (i,j) is attacked by other queens or not.
+ 
+ 
  
 
-+operation() 
+    attackChecking(int i,int j) 
+ 
+ Here I am checking wheather this queen which means (i,j) is attacked by other queens or not.
+ 
+ 
+
+    operation() 
+ 
+ 
  Here is the implementation of backtracking.
+ 
+  
+
+    if((!attackChecking(i,j)) && (myChessBoard[i][j]!=1)) 
+ 
+ 
+ 
+ Here in the first we are checking wheather the queen is under attack or not and then we checking that position is already occupied by other queen or not.
+ 
  
   
 
